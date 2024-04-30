@@ -254,11 +254,11 @@ def resize(image_file, new_size):
     im = Image.open(image_file)
     im.thumbnail(new_size, Image.Resampling.BILINEAR)
     try:
-        im.save('./temp_img/tmp.jpg')
-        return "./temp_img/tmp.jpg"
+        im.save('./temp/tmp.jpg')
+        return "./temp/tmp.jpg"
     except:
-        im.save('./temp_img/tmp.png')
-        return "./temp_img/tmp.png"
+        im.save('./temp/tmp.png')
+        return "./temp/tmp.png"
 
 size = (350, 500)
 
